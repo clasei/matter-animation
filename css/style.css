@@ -22,6 +22,7 @@ body {
 #quote {
     width: 550px;
     text-align: right;
+    font-size: 15px;
     font-style: italic;
     color:grey;
     padding-top: 25px;

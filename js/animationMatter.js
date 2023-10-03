@@ -28,8 +28,8 @@ function initAnimation() {
 
     ball = Bodies.circle(300, 0, 30, {
         density: 0.03,
-        frictionAir: 0.002,
-        restitution: 0.94,
+        frictionAir: 0.001,
+        restitution: 0.9,
         friction: 0.01,
         render: {
             fillStyle: 'pink',

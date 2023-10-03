@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: rgba(50, 185, 79, 0.2);
@@ -55,20 +57,15 @@ body {
     overflow: hidden; /* hace que la animación no se muestre fuera del borde redondeado */
 }
 
-.coolButton {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 50px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.coolButton:hover {
+.btn.btn-light:hover,
+.btn.btn-light:active,
+.btn.btn-light:focus {
     background-color: pink;
+    border-color: pink;
+    color: white;
 }
 
+.btn.btn-light {
+    border-radius: 50px;
+    padding: 5px 25px;
+}

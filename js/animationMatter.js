@@ -27,4 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
     World.add(engine.world, [ball]);
     Engine.run(engine);
     Render.run(render);
+
+    Events.on(engine, 'afterUpdate', function() {
+        if (ball.position.y > render.canvas.height + 20) {
+            Matter.Body.setPosition(ball, {x: 300, y: -20});
+        }
+    });
 });

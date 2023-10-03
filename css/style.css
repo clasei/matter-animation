@@ -1,9 +1,15 @@
-
+:root {
+    --main-color: black;
+    --accent-color: pink;
+    --background-color: rgba(50, 185, 79, 0.2);
+    --neutral-color: grey;
+    --neutral-light-color: #949494;
+}
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(50, 185, 79, 0.2);
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--neutral-light-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,40 +18,28 @@ body {
 }
 
 @keyframes colorChange {
-    0%   {color: black;}
-    25%  {color: pink;}
-    50%  {color: white;}
-    75%  {color: pink;}
-    100% {color: black;}
+    0%, 100% {color: var(--main-color);}
+    25%, 75% {color: var(--accent-color);}
+    50% {color: white;}
 }
 
-
 #container {
-    text-align: center; 
+    text-align: center;
 }
 
 #main-title {
-    color: black;
     padding-top: 25px;
     animation: colorChange 13s infinite;
-    
 }
 
-#quote {
-    width: 550px;
-    text-align: right;
-    font-size: small;
+.quote {
+    font-size: 15px;
     font-style: italic;
     font-weight: 400;
-    color:grey;
-    padding-top: 25px;
 }
 
-#author {
-    width: 550px;
-    text-align: right;
-    font-size: small;
-    color:grey;
+.author {
+    font-size: 13px;
     padding-bottom: 25px;
 }
 
@@ -54,7 +48,7 @@ body {
     height: 400px;
     margin: auto;
     border-radius: 25px;
-    overflow: hidden; /* hace que la animación no se muestre fuera del borde redondeado */
+    overflow: hidden;
 }
 
 .btn.btn-light:hover,

@@ -26,7 +26,7 @@ function initAnimation() {
         }
     });
 
-    ball = Bodies.circle(300, 0, 30, {
+    ball = Bodies.circle(300, 0, 35, {
         density: 0.03,
         frictionAir: 0.003,
         restitution: 0.9,

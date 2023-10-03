@@ -8,3 +8,12 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+
+#animation {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 25px;
+    overflow: hidden; /* hace que la animación no se muestre fuera del borde redondeado */
+}
+

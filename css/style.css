@@ -9,6 +9,15 @@ body {
     margin: 0;
 }
 
+@keyframes colorChange {
+    0%   {color: black;}
+    25%  {color: pink;}
+    50%  {color: white;}
+    75%  {color: aquamarine;}
+    100% {color: black;}
+}
+
+
 #container {
     text-align: center; 
 }
@@ -16,6 +25,7 @@ body {
 #main-title {
     color: black;
     padding-top: 25px;
+    animation: colorChange 13s infinite;
     
 }
 

@@ -1,16 +1,22 @@
+const { Engine, Render, World, Bodies } = Matter;
+let engine, render, ball, ground;
+
 document.addEventListener("DOMContentLoaded", function() {
     initAnimation();
 
     document.getElementById('restartButton').addEventListener('click', function() {
-        Matter.Engine.clear(engine); // limpia el motor de matter para reiniciar
+        Matter.Engine.clear(engine);
+        Matter.Render.stop(render); // Detenemos el render
+        render.canvas.remove(); // Eliminamos el canvas actual
+        render.context = null; // Limpiamos el contexto del render
+        render.textures = {}; // Limpiamos las texturas del render
         initAnimation();
-        });
     });
+});
 
-    const { Engine, Render, World, Bodies } = Matter;
-
-    const engine = Engine.create();
-    const render = Render.create({
+function initAnimation() {
+    engine = Engine.create();
+    render = Render.create({
         element: document.getElementById('animation'),
         engine: engine,
         options: {
@@ -20,20 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const ball = Bodies.circle(300, 0, 20, {
+    ball = Bodies.circle(300, 0, 20, {
         density: 0.04,
         frictionAir: 0.006,
         restitution: 0.9,
         friction: 0.01,
         render: {
-            fillStyle: 'white',
-            strokeStyle: 'white',
-            lineWidth: 7
+            fillStyle: 'pink',
+            strokeStyle: 'pink',
+            lineWidth: 13
         }
     });
 
-    // creamos el suelo
-    const ground = Bodies.rectangle(300, 390, 600, 20, {
+    ground = Bodies.rectangle(300, 390, 600, 20, {
         isStatic: true,
         render: {
             fillStyle: 'pink',
@@ -45,5 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
     World.add(engine.world, [ball, ground]);
     Engine.run(engine);
     Render.run(render);
-
 }
+
+

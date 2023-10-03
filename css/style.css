@@ -13,7 +13,7 @@ body {
     0%   {color: black;}
     25%  {color: pink;}
     50%  {color: white;}
-    75%  {color: aquamarine;}
+    75%  {color: pink;}
     100% {color: black;}
 }
 
@@ -32,8 +32,9 @@ body {
 #quote {
     width: 550px;
     text-align: right;
-    font-size: 15px;
+    font-size: small;
     font-style: italic;
+    font-weight: 400;
     color:grey;
     padding-top: 25px;
 }

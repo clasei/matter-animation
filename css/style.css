@@ -13,6 +13,28 @@ body {
     text-align: center; 
 }
 
+#main-title {
+    color: black;
+    padding-top: 25px;
+    
+}
+
+#quote {
+    width: 550px;
+    text-align: right;
+    font-style: italic;
+    color:grey;
+    padding-top: 25px;
+}
+
+#author {
+    width: 550px;
+    text-align: right;
+    font-size: small;
+    color:grey;
+    padding-bottom: 25px;
+}
+
 #animation {
     width: 600px;
     height: 400px;

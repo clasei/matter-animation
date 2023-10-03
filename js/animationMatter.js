@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+    initAnimation();
+
+    document.getElementById('restartButton').addEventListener('click', function() {
+        Matter.Engine.clear(engine); // limpia el motor de matter para reiniciar
+        initAnimation();
+        });
+    });
+
     const { Engine, Render, World, Bodies } = Matter;
 
     const engine = Engine.create();
@@ -18,19 +26,24 @@ document.addEventListener("DOMContentLoaded", function() {
         restitution: 0.9,
         friction: 0.01,
         render: {
-            fillStyle: '#F35e66',
-            strokeStyle: 'black',
-            lineWidth: 1
+            fillStyle: 'white',
+            strokeStyle: 'white',
+            lineWidth: 7
         }
     });
 
-    World.add(engine.world, [ball]);
+    // creamos el suelo
+    const ground = Bodies.rectangle(300, 390, 600, 20, {
+        isStatic: true,
+        render: {
+            fillStyle: 'pink',
+            strokeStyle: 'black',
+            lineWidth: 0
+        }
+    });
+
+    World.add(engine.world, [ball, ground]);
     Engine.run(engine);
     Render.run(render);
 
-    Events.on(engine, 'afterUpdate', function() {
-        if (ball.position.y > render.canvas.height + 20) {
-            Matter.Body.setPosition(ball, {x: 300, y: -20});
-        }
-    });
-});
+}

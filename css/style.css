@@ -29,7 +29,7 @@ body {
 
 #main-title {
     animation: colorChange 13s infinite;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .quote {
@@ -65,12 +65,19 @@ body {
     padding: 5px 25px;
 }
 
-@media only screen and (max-width: 600px) {
-    #main-title {
-        font-size: 24px;
+@media only screen and (max-width: 480px) {
+
+    #container {
+        max-width: 600px;
     }
+    
+    #main-title {
+        font-size: 31px;
+    }
+
+    
     #animation {
         width: 100%;
-        height: auto;
-    }
+     }
+     
 }

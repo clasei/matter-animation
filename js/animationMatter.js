@@ -28,7 +28,7 @@ function initAnimation() {
 
     ball = Bodies.circle(300, 0, 30, {
         density: 0.03,
-        frictionAir: 0.001,
+        frictionAir: 0.003,
         restitution: 0.9,
         friction: 0.01,
         render: {

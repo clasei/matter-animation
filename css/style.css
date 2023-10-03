@@ -28,14 +28,15 @@ body {
 }
 
 #main-title {
-    padding-top: 25px;
     animation: colorChange 13s infinite;
+    padding-top: 25px;
 }
 
 .quote {
     font-size: 15px;
     font-style: italic;
     font-weight: 400;
+    padding-top: 15px;
 }
 
 .author {

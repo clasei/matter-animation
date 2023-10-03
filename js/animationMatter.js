@@ -26,19 +26,19 @@ function initAnimation() {
         }
     });
 
-    ball = Bodies.circle(300, 0, 20, {
-        density: 0.04,
-        frictionAir: 0.006,
-        restitution: 0.9,
+    ball = Bodies.circle(300, 0, 30, {
+        density: 0.03,
+        frictionAir: 0.002,
+        restitution: 0.94,
         friction: 0.01,
         render: {
             fillStyle: 'pink',
             strokeStyle: 'pink',
-            lineWidth: 13
+            lineWidth: 7
         }
     });
 
-    ground = Bodies.rectangle(300, 390, 600, 20, {
+    ground = Bodies.rectangle(300, 385, 600, 70, {
         isStatic: true,
         render: {
             fillStyle: 'pink',

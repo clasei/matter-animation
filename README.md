@@ -1,7 +1,7 @@
 # easy-matter-motion
 A simple and accessible way to create animations with Matter.js
 
-# animationMatter, the function: A Simple, Animated Matter.js Setup
+**animationMatter, the function: A Simple, Animated Matter.js Setup**
 
 ## Table of Contents
 - [Overview](#overview)

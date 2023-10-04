@@ -77,4 +77,4 @@ Save your changes and open `index.html` in your browser. Enjoy the playful bounc
 Feel free to fork, modify, and utilize animationMatter in your projects. For queries, issues, or contributions, kindly [open an issue](https://github.com/clasei/easy-matter-motion/issues/new) and let’s keep the ball rolling.
 
 ## License
-This project is open source, under the [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/deed.es). The Matter.js library created by [liabru](https://github.com/liabru/matter-js) utilized in the project is under the [MIT License](https://github.com/liabru/matter-js/blob/master/LICENSE).
+This project is open source, under the [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/deed). The Matter.js library created by [liabru](https://github.com/liabru/matter-js) utilized in the project is under the [MIT License](https://github.com/liabru/matter-js/blob/master/LICENSE).

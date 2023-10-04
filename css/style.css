@@ -29,24 +29,25 @@ body {
 
 #main-title {
     animation: colorChange 13s infinite;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 .quote {
     font-size: 15px;
     font-style: italic;
     font-weight: 400;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .author {
     font-size: 13px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 #animation {
-    width: 600px;
-    height: 400px;
+    width: max-content;
+    height: 380px;
     margin: auto;
     border-radius: 25px;
     overflow: hidden;
@@ -69,8 +70,22 @@ body {
     #main-title {
         font-size: 24px;
     }
+
+    .quote {
+        font-size: 13px;
+    }
+
+    .author {
+        font-size: 11px;
+    }
+
     #animation {
         width: 100%;
-        height: auto;
+        height: 380px;
+
+    }
+
+    .btn.btn-light {
+        font-size: 15px;
     }
 }

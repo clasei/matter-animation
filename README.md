@@ -34,11 +34,11 @@ Want to utilize this animation setup or adapt it to your own ideas? Here’s a q
    
    Feel free to clone this repo or download the files.
 
-   git clone https://github.com/clasei/easy-matter-motion.git
+   `git clone https://github.com/clasei/easy-matter-motion.git`
 
 2. **Navigate to the project directory**
    
-   cd path-to/animationMatter
+   `cd path-to/animationMatter`
 
 ## Customize the Animation
 

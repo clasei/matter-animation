@@ -25,11 +25,12 @@ body {
 
 #container {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 #main-title {
     animation: colorChange 13s infinite;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .quote {

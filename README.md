@@ -3,6 +3,18 @@ A simple and accessible way to create animations with Matter.js
 
 # animationMatter, the function: A Simple, Animated Matter.js Setup
 
+## Table of Contents
+- [Overview](#overview)
+- [How to Use](#how-to-use)
+  - [Prerequisites](#prerequisites)
+  - [Installation & Setup](#installation--setup)
+- [Customize the Animation](#customize-the-animation)
+  - [Ball Creation & Properties](#ball-creation--properties)
+  - [Animation Area](#animation-area)
+  - [Running Your Changes](#running-your-changes)
+- [Contributing & Support](#contributing--support)
+- [License](#license)
+
 ## Overview
 
 "animationMatter" provides a straightforward, ready-to-run setup of an animated bouncing ball using Matter.js. Simply put, it's energy transformed into a digital, interactive form - a small tribute to the transformative potential of matter and energy.

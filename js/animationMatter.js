@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById('restartButton').addEventListener('click', function() {
         Matter.Engine.clear(engine);
-        Matter.Render.stop(render); // Detenemos el render
-        render.canvas.remove(); // Eliminamos el canvas actual
-        render.context = null; // Limpiamos el contexto del render
-        render.textures = {}; // Limpiamos las texturas del render
+        Matter.Render.stop(render); 
+        render.canvas.remove();     // current canvas removed here
+        render.context = null;      // context cleaned
+        render.textures = {};       // render's textures cleaned
         initAnimation();
     });
 });
@@ -20,13 +20,13 @@ function initAnimation() {
         element: document.getElementById('animation'),
         engine: engine,
         options: {
-            width: 600,
-            height: 400,
+            width: 300,
+            height: 380,
             wireframes: false
         }
     });
 
-    ball = Bodies.circle(300, 0, 35, {
+    ball = Bodies.circle(150, 0, 25, {
         density: 0.03,
         frictionAir: 0.003,
         restitution: 0.9,
@@ -38,7 +38,7 @@ function initAnimation() {
         }
     });
 
-    ground = Bodies.rectangle(300, 385, 600, 70, {
+    ground = Bodies.rectangle(300, 385, 600, 130, {
         isStatic: true,
         render: {
             fillStyle: 'pink',

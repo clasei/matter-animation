@@ -25,7 +25,8 @@ body {
 
 #container {
     text-align: center;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 100px;
 }
 
 #main-title {
@@ -47,6 +48,7 @@ body {
 }
 
 #animation {
+    display: flex;
     width: max-content;
     height: 370px;
     margin: auto;
@@ -69,15 +71,15 @@ body {
 
 @media only screen and (max-width: 600px) {
     #main-title {
-        font-size: 24px;
+        font-size: 2em;
     }
 
     .quote {
-        font-size: 13px;
+        font-size: 1em;
     }
 
     .author {
-        font-size: 11px;
+        font-size: 0.87em;
     }
 
     #animation {

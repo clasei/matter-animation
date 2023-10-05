@@ -21,7 +21,7 @@ function initAnimation() {
         engine: engine,
         options: {
             width: 300,
-            height: 380,
+            height: 370,
             wireframes: false
         }
     });
@@ -38,11 +38,11 @@ function initAnimation() {
         }
     });
 
-    ground = Bodies.rectangle(300, 385, 600, 130, {
+    ground = Bodies.rectangle(300, 385, 600, 160, {
         isStatic: true,
         render: {
             fillStyle: 'pink',
-            strokeStyle: 'black',
+            strokeStyle: 'pink',
             lineWidth: 0
         }
     });

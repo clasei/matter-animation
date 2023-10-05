@@ -12,6 +12,27 @@ document.addEventListener("DOMContentLoaded", function() {
         render.textures = {};       // render's textures cleaned
         initAnimation();
     });
+
+    let text = " < see the code here >";
+    let index = 0;
+    let dynamicTextElement = document.getElementById("dynamicText");
+
+    function typeText() {
+        if (index < text.length) {
+            dynamicTextElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeText, 150); // change typing speed
+        } else {
+            // wait some time and restart typing
+            setTimeout(() => {
+                dynamicTextElement.textContent = "";
+                index = 0;
+                typeText();
+            }, 3000); // wait 2 seconds before retyping
+        }
+    } 
+
+    typeText();
 });
 
 function initAnimation() {
@@ -51,5 +72,3 @@ function initAnimation() {
     Engine.run(engine);
     Render.run(render);
 }
-
-

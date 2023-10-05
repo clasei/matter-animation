@@ -17,12 +17,6 @@ body {
     margin: 0;
 }
 
-@keyframes colorChange {
-    0%, 100% {color: var(--main-color);}
-    25%, 75% {color: var(--accent-color);}
-    50% {color: white;}
-}
-
 #container {
     text-align: center;
     padding-top: 25px;
@@ -30,16 +24,22 @@ body {
 }
 
 #main-title {
+    font-size: 36px;
     animation: colorChange 13s infinite;
     padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+@keyframes colorChange {
+    0%, 100% {color: var(--main-color);}
+    25%, 75% {color: var(--accent-color);}
+    50% {color: white;}
 }
 
 .quote {
     font-size: 15px;
     font-style: italic;
     font-weight: 400;
-    padding-top: 15px;
-    padding-bottom: 5px;
 }
 
 .author {
@@ -66,7 +66,32 @@ body {
 
 .btn.btn-light {
     border-radius: 50px;
+    font-size: 1.1em;
     padding: 5px 25px;
+}
+
+#link-container {
+    padding-top: 35px; 
+}
+
+#codeLink code {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 750;
+    font-size: 1em;
+    color: pink;
+}
+
+#codeLink:hover, #codeLink:focus {
+    color: rgb(0, 255, 179);
+    text-decoration: underline;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,6 +114,6 @@ body {
     }
 
     .btn.btn-light {
-        font-size: 15px;
+        font-size: 1em;
     }
 }

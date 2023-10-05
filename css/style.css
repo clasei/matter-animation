@@ -17,28 +17,29 @@ body {
     margin: 0;
 }
 
+#container {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+#main-title {
+    font-size: 36px;
+    animation: colorChange 13s infinite;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
 @keyframes colorChange {
     0%, 100% {color: var(--main-color);}
     25%, 75% {color: var(--accent-color);}
     50% {color: white;}
 }
 
-#container {
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-#main-title {
-    animation: colorChange 13s infinite;
-    padding-top: 50px;
-}
-
 .quote {
     font-size: 15px;
     font-style: italic;
     font-weight: 400;
-    padding-top: 15px;
-    padding-bottom: 5px;
 }
 
 .author {
@@ -47,8 +48,9 @@ body {
 }
 
 #animation {
+    display: flex;
     width: max-content;
-    height: 380px;
+    height: 370px;
     margin: auto;
     border-radius: 25px;
     overflow: hidden;
@@ -64,20 +66,45 @@ body {
 
 .btn.btn-light {
     border-radius: 50px;
+    font-size: 1.1em;
     padding: 5px 25px;
+}
+
+#link-container {
+    padding-top: 35px; 
+}
+
+#codeLink code {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 750;
+    font-size: 1em;
+    color: pink;
+}
+
+#codeLink:hover, #codeLink:focus {
+    color: rgb(0, 255, 179);
+    text-decoration: underline;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
 }
 
 @media only screen and (max-width: 600px) {
     #main-title {
-        font-size: 24px;
+        font-size: 2em;
     }
 
     .quote {
-        font-size: 13px;
+        font-size: 1em;
     }
 
     .author {
-        font-size: 11px;
+        font-size: 0.87em;
     }
 
     #animation {
@@ -87,6 +114,6 @@ body {
     }
 
     .btn.btn-light {
-        font-size: 15px;
+        font-size: 1em;
     }
 }

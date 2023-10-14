@@ -28,15 +28,12 @@ Want to utilize this animation setup or adapt it to your own ideas? Here’s a q
 
 ### Installation & Setup
 
-1. **Clone/Download this Repository**
+**Clone/Download this Repository**
    
    Feel free to clone this repo or download the files.
 
-   `git clone https://github.com/clasei/easy-matter-motion.git`
+   `git clone https://github.com/clasei/matter-animation.git`
 
-2. **Navigate to the project directory**
-   
-   `cd path-to/animationMatter`
 
 ## Customize the Animation
 
@@ -72,7 +69,7 @@ To modify the animation's stage, locate the rendering settings in `animationMatt
 Save your changes and open `index.html` in your browser. Enjoy the playful bounce of your custom ball in the interactive canvas!
 
 ## Contributing & Support
-Feel free to fork, modify, and utilize animationMatter in your projects. For queries, issues, or contributions, kindly [open an issue](https://github.com/clasei/easy-matter-motion/issues/new) and let’s keep the ball rolling.
+Feel free to fork, modify, and utilize matterAnimation in your projects. For queries, issues, or contributions, kindly [open an issue](https://github.com/clasei/matter-animation/issues/new) and let’s keep the ball rolling.
 
 ## License
 This project is open source, under the [Creative Commons License](https://creativecommons.org/publicdomain/zero/1.0/deed). The Matter.js library created by [liabru](https://github.com/liabru/matter-js) utilized in the project is under the [MIT License](https://github.com/liabru/matter-js/blob/master/LICENSE).

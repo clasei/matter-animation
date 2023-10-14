@@ -1,4 +1,4 @@
-const { Engine, Render, World, Bodies } = Matter;
+const { Engine, Render, World, Bodies, Runner } = Matter;
 let engine, render, ball, ground;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -72,6 +72,7 @@ function initAnimation() {
     });
 
     World.add(engine.world, [ball, ground]);
-    Engine.run(engine);
+    const runner = Runner.create();
+    Runner.run(runner, engine);
     Render.run(render);
 }

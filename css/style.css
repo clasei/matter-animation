@@ -115,7 +115,7 @@ body {
 footer a {
     text-decoration: none;
     color: rgb(92, 97, 255);
-    margin: 0 10px;
+    margin: 0 7px;
     transition: color 0.5s;
 }
 
@@ -126,15 +126,6 @@ footer a:hover {
 
 footer span {
     margin: 0 10px;
-}
-
-#currentYear {
-    margin-right: 1px;
-}
-
-#rocketIcon {
-    margin-left: 1px;
-    margin-right: 1px;
 }
 
 @media only screen and (max-width: 768px) {

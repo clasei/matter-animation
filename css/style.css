@@ -29,6 +29,7 @@ body {
 
 #main-title {
     font-size: 36px;
+    font-weight: 600;
     animation: colorChange 13s infinite;
     padding-top: 50px;
     padding-bottom: 25px;
@@ -80,7 +81,7 @@ body {
 
 #codeLink code {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 750;
+    font-weight: bold;
     font-size: 1em;
     color: pink;
 }
@@ -100,7 +101,9 @@ body {
 
 #footer {
     font-family: 'Roboto Mono', monospace;
-    background-color: rgba(50, 185, 79, 0.2);
+    color: darkslategrey;
+    font-size: 0.7em;
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
     width: 100%;
     position: absolute;
@@ -110,7 +113,7 @@ body {
 
 footer a {
     text-decoration: none;
-    color: #333;
+    color: rgb(92, 97, 255);
     margin: 0 10px;
     transition: color 0.3s;
 }
@@ -124,7 +127,7 @@ footer span {
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #main-title {
         font-size: 2em;
     }
@@ -144,5 +147,9 @@ footer span {
     
     .btn.btn-light {
         font-size: 1em;
-    }    
+    }   
+    
+    #footer {
+        position: fixed; 
+    }
 }

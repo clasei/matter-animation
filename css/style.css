@@ -42,13 +42,13 @@ body {
 }
 
 .quote {
-    font-size: 15px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
 }
 
 .author {
-    font-size: 13px;
+    font-size: 12px;
     padding-bottom: 15px;
 }
 
@@ -103,19 +103,20 @@ body {
     font-family: 'Roboto Mono', monospace;
     color: darkslategrey;
     font-size: 0.7em;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 10px;
     width: 100%;
     position: absolute;
     bottom: 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 footer a {
     text-decoration: none;
     color: rgb(92, 97, 255);
     margin: 0 10px;
-    transition: color 0.3s;
+    transition: color 0.5s;
 }
 
 footer a:hover {
@@ -124,7 +125,16 @@ footer a:hover {
 }
 
 footer span {
-    margin-right: 10px;
+    margin: 0 10px;
+}
+
+#currentYear {
+    margin-right: 1px;
+}
+
+#rocketIcon {
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,5 +161,6 @@ footer span {
     
     #footer {
         position: fixed; 
+        border-radius: 5px;
     }
 }

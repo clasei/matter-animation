@@ -4,6 +4,9 @@ let engine, render, ball, ground;
 document.addEventListener("DOMContentLoaded", function() {
     initAnimation();
 
+    const yearElement = document.getElementById("currentYear");
+    yearElement.textContent = new Date().getFullYear();
+
     document.getElementById('restartButton').addEventListener('click', function() {
         Matter.Engine.clear(engine);
         Matter.Render.stop(render); 

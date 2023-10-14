@@ -94,6 +94,30 @@ body {
     50% { opacity: 0; }
 }
 
+#footer {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(50, 185, 79, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: pink;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+footer span {
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 600px) {
     #main-title {
         font-size: 2em;

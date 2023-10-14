@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--neutral-light-color);
     display: flex;
@@ -21,6 +21,10 @@ body {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 100px;
+}
+
+#container > div:not(#footer) {
+    flex: 1;
 }
 
 #main-title {
@@ -97,20 +101,20 @@ body {
 #footer {
     font-family: 'Roboto Mono', monospace;
     background-color: rgba(50, 185, 79, 0.2);
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
-    background-color: pink;
     color: #333;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: darkcyan;
+    background-color: pink;
     font-weight: bold;
 }
 

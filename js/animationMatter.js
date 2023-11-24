@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         initAnimation();
     });
 
-    let text = " < see the code here >";
+    let text = " <!-- see the code here -->";
     let index = 0;
     let dynamicTextElement = document.getElementById("dynamicText");
 

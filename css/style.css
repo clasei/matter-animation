@@ -76,14 +76,15 @@ body {
 }
 
 #link-container {
-    padding-top: 35px; 
+    padding-top: 50px; 
 }
 
 #codeLink code {
     font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 1em;
+    font-weight: 500;
+    font-size: 0.9em;
     color: pink;
+    background: rgba(255, 255, 0, 0.404);
 }
 
 #codeLink:hover, #codeLink:focus {
@@ -114,12 +115,14 @@ body {
 
 footer a {
     text-decoration: none;
-    color: rgb(92, 97, 255);
-    margin: 0 10px;
+    font-weight: bold;
+    color: rgb(94, 160, 255);
+    margin: 2px;
     transition: color 0.5s;
 }
 
 footer a:hover {
+    color: rgb(10, 112, 255);
     background-color: pink;
     font-weight: bold;
 }
@@ -129,7 +132,7 @@ footer span {
 }
 
 #rocketIcon {
-    margin-left: 0px;
+    margin-left: 1px;
     margin-right: 1px;
 }
 
